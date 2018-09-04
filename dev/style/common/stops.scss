@@ -1,0 +1,72 @@
+.stops-list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	&__item {
+
+		&:hover {
+			border-color: #64b5f5;
+			background-color: $light_blue;
+			z-index: 2;
+		}
+
+		&.active {
+			background-color: $main_blue;
+			color: $main_light;
+			border-color: $main_blue;
+		}
+	}
+
+	&__item-label {
+		display: flex;
+		padding: 8px 16px;
+		cursor: pointer;
+		color: #4a4a4a;
+		font-size: 13px;
+	}
+
+	&__item-checkbox {
+		visibility: hidden;
+		height: 0;
+		width: 0;
+		position: absolute;
+
+		&:checked + span {
+			border-color: $main_blue;
+			background-color: $light_blue;
+
+			&:before {
+				transform: scale(1);
+				opacity: 1;
+			}
+		}
+	}
+
+	&__item-check {
+		width: 19px;
+		height: 19px;
+		border-radius: 3px;
+		border: 1px solid #d2d5d6;
+		background-color: #ffffff;
+		display: inline-block;
+		margin-right: 17px;
+		position: relative;
+
+		&:before {
+			background: url('../../images/check-icon.png') center no-repeat;
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			content: '';
+			transition: .4s;
+			transform: scale(0.5);
+			opacity: 0;
+		}
+	}
+
+}
+
