@@ -2,3 +2,55 @@
 	outline: none;
 	background: inherit;
 }
+
+.pink-button {
+	height: 48px;
+	border-radius: 4px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), inset 0 -2px 0 0 rgba(163, 0, 90, 0.32);
+	background-color: #f00085;
+	border: none;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	color: #ffffff;
+	width: 100%;
+	cursor: pointer;
+	transition: .3s;
+
+	&:hover {
+		background-color: lighten(#f00085, 10%);
+	}
+
+	&:active {
+		background-color: darken(#f00085, 10%);
+		box-shadow: none;
+	}
+}
+
+.menu-btn {
+	width: 34px;
+	height: 34px;
+	background-color: #000000;
+	border: none;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		width: 30px;
+		height: 30px;
+	}
+}
+
+.cart-btn {
+	width: 34px;
+	height: 34px;
+	background-color: #000000;
+	border: none;
+	justify-content: center;
+	align-items: center;
+
+	img {
+		width: 30px;
+		height: 30px;
+	}
+}

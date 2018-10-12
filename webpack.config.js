@@ -9,12 +9,12 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports = {
     context: __dirname + '/dev',
 
-    entry: './js/app.js',
+    entry: './js/index.js',
 
     output: {
         path: path.join(__dirname, 'prod'),
         filename: 'bundle.js',
-        library: 'app',
+        library: 'index',
         publicPath: "/prod"
     },
 

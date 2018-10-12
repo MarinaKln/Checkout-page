@@ -3,11 +3,280 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!--<link rel="stylesheet" href="prod/style.css"/>-->
-    <title>Aviasales</title>
+    <title>Checkout page</title>
+    <script type="text/javascript" src="bundle.js"></script>
 </head>
 <body>
-    <div id="container" class="container"></div>
-    <script type="text/javascript" src="bundle.js"></script>
+<div class="main-wrap">
+    <header class="header">
+        <div class="container header__container">
+            <button class="button header__mob-btn menu-btn">
+                <img src="/images/burger-icon.svg" alt="">
+            </button>
+            <a href="#" class="header__logo-link">
+                <img src="/images/logo.png" alt="kasta">
+            </a>
+            <div class="header__nav">
+                <div class="header__nav-item">1. ДОСТАВКА</div>
+                <span class="header__nav-divider"></span>
+                <div class="header__nav-item">2. ОПЛАТА</div>
+                <span class="header__nav-divider"></span>
+                <div class="header__nav-item active">3. ПОДТВЕРЖДЕНИЕ</div>
+            </div>
+            <button class="button header__mob-btn cart-btn">
+                <img src="/images/cart-icon.svg" alt="">
+            </button>
+        </div>
+    </header>
+    <div class="container checkout__container">
+        <div class="checkout__item checkout__item--top checkout__mob-nav">
+            <div class="checkout__mob-item ready">
+                <p>доставка</p>
+                <span class="checkout__mob-item-icon"><span>1</span></span>
+            </div>
+            <div class="checkout__mob-item ready">
+                <p>оплата</p>
+                <span class="checkout__mob-item-icon"><span>2</span></span>
+            </div>
+            <div class="checkout__mob-item">
+                <p>подтверждение</p>
+                <span class="checkout__mob-item-icon"><span>3</span></span>
+            </div>
+        </div>
+
+        <div class="checkout__item checkout__item--simple">
+            <p class="check-title title">ДОСТАВКА</p>
+            <div class="checkout__item-text">
+                <p class="text-item">Самовывоз:
+                    <span>Киев, №1, Харьковское шоссе, 201/203, БЦ modnaVilla, 1 этаж, Київ</span></p>
+                <p class="_small-text _gray-text height-text-item">С 10:00 до 21:00, без выходных</p>
+            </div>
+            <div class="checkout__item-text">
+                <p class="text-item">Получатель: <span>Василий Пупкин</span></p>
+                <p class="_small-text _gray-text height-text-item">(099) 123-45-67</p>
+            </div>
+            <a href="#" class="blue-text checkout__change-link">Изменить</a>
+        </div>
+        <div class="checkout__item checkout__item--simple">
+            <div>
+                <p class="check-title title">ОПЛАТА</p>
+                <div class="checkout__item-text">
+                    <p class="text-item">Наличными в платежном терминале</p>
+                </div>
+                <a href="#" class="blue-text checkout__change-link">Изменить</a>
+            </div>
+            <div class="info-block info-block--border-top">
+                <div class="info-block__img-wrap">
+                    <img class="info-block__img" src="/images/credit-icon.svg" alt="">
+                </div>
+                <div class="info-block__text">
+                    <p class="_gray-text _small-text">
+                        Оплатите картой на сайте и получите
+                        бесплатную доставку до 5 кг и <span class="_red-text _bold">скидку 5%</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="checkout__item-wrap checkout__item-wrap--big">
+            <div class="checkout__item checkout__item--big">
+                <div class="checkout__item-title">
+                    <p class="_gray-text _small-text height-text-item">Быстрая доставка Black</p>
+                </div>
+                <div class="checkout__goods-wrap">
+                    <div class="checkout__goods-items">
+                        <div class="checkout__goods-item">
+                            <a href="#" class="checkout__goods-img">
+                                <img src="/images/goods-img-1.jpg" alt="">
+                            </a>
+                            <div>
+                                <a href="#" class="checkout__goods-title">Легинсы United Colors of Benetton</a>
+                                <p class="checkout__goods-text">Размер: XS, Цвет: Белый,</p>
+                                <p class="checkout__goods-text">Цена: 1400 грн, Кол-во: 1, Сумма: 1400 грн</p>
+                            </div>
+                        </div>
+                        <div class="checkout__goods-item">
+                            <div class="checkout__goods-img">
+                                <img src="/images/goods-img-2.jpg" alt="">
+                            </div>
+                            <div>
+                                <a href="#" class="checkout__goods-title">Футболка Colins</a>
+                                <p class="checkout__goods-text">Размер: XS, Цвет: Белый,</p>
+                                <p class="checkout__goods-text">Цена: 1400 грн, Кол-во: 1, Сумма: 1400 грн</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout__goods-info">
+                        <div class="checkout__info-item">
+                            <span>Кол-во товаров</span>
+                            <span>2</span>
+                        </div>
+                        <div class="checkout__info-item">
+                            <span>Стоимость доставки</span>
+                            <span>бесплатно</span>
+                        </div>
+                        <div class="checkout__info-item">
+                            <span>Сумма заказа</span>
+                            <span>2800 грн</span>
+                        </div>
+                        <div class="checkout__info-item">
+                            <span>Дата доставки</span>
+                            <span>28 Окт. — 04 Ноя.</span>
+                        </div>
+                        <div class="checkout__info-item">
+                            <span>Общий вес</span>
+                            <span class="_flex">
+                            7 кг
+                            <span class="info-icon">
+                                <img class="info-icon__img" src="/images/info-icon.svg" alt="">
+                            </span>
+                        </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="blue-text checkout__back-btn">
+                <span>
+                    <img class="checkout__back-btn-img" src="/images/arrow-left.svg" alt="">
+                </span>
+                <span>Вернуться в корзину</span>
+            </a>
+        </div>
+        <div class="checkout__item-wrap checkout__item-wrap--long">
+            <div class="checkout__item">
+                <div class="checkout__confirm-title">
+                    <p class="title">ПОДТВЕРЖДЕНИЕ</p>
+                </div>
+                <div class="checkout__confirm-item">
+                    <form class="checkout__promo-form">
+                        <input class="checkout__promo-input" placeholder="Ввести промокод" type="text">
+                        <button class="checkout__promo-btn button">
+                            <span class="blue-text">Применить</span>
+                        </button>
+                    </form>
+                    <div class="confirm__items-wrap confirm__items-wrap--md-ptn">
+                        <p class="sub-title">Использовать перснальный счет</p>
+                        <div class="confirm__check-item">
+                            <label class="confirm__check-label">
+                                <input class="confirm__check-box" type="checkbox">
+                                <span class="confirm__checker"></span>
+                                <span class="confirm__check-text">100 грн</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="confirm__items-wrap confirm__items-wrap--border-top">
+                            <p class="sub-title">Использовать досупные бонусы</p>
+                            <div class="show-more">
+                                <div class="confirm__check-item">
+                                    <label class="confirm__check-label">
+                                        <input class="confirm__check-box" type="checkbox">
+                                        <span class="confirm__checker"></span>
+                                        <span class="confirm__check-text">100 грн</span>
+                                    </label>
+                                    <span class="confirm__item-text">до 3 Авг 2017 6:00</span>
+                                </div>
+                                <div class="confirm__check-item">
+                                    <label class="confirm__check-label">
+                                        <input class="confirm__check-box" type="checkbox">
+                                        <span class="confirm__checker"></span>
+                                        <span class="confirm__check-text">30 грн</span>
+                                    </label>
+                                    <span class="confirm__item-text">до 3 Авг 2017 6:00</span>
+                                </div>
+                                <div class="confirm__check-item">
+                                    <label class="confirm__check-label">
+                                        <input class="confirm__check-box" type="checkbox">
+                                        <span class="confirm__checker"></span>
+                                        <span class="confirm__check-text">30 грн</span>
+                                    </label>
+                                    <span class="confirm__item-text">до 3 Авг 2017 6:00</span>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="blue-text">Показать ещё бонусы</span>
+                    </div>
+                </div>
+                <div class="checkout__confirm-item checkout__confirm-item--border-top">
+                    <div>
+                        <div class="checkout__info-item">
+                            <span>Кол-во товаров</span>
+                            <span>2</span>
+                        </div>
+                        <div class="checkout__info-item">
+                            <span>Общее кол-во товаров</span>
+                            <span>3</span>
+                        </div>
+                        <div class="checkout__info-item">
+                            <span>Сумма заказов</span>
+                            <span>4350 грн</span>
+                        </div>
+                        <div class="checkout__info-item">
+                            <span>Стоимость доставки</span>
+                            <span>380 грн</span>
+                        </div>
+                        <div class="checkout__info-item _red-text">
+                            <span>При оплате картой</span>
+                            <span>-60 грн</span>
+                        </div>
+                        <div class="checkout__info-item">
+                            <span>Вес посылки</span>
+                            <span>7 кг</span>
+                        </div>
+                    </div>
+                    <div class="info-block info-block--padding-small">
+                        <div class="info-block__img-wrap">
+                            <img class="info-block__img" src="/images/weight-icon.svg" alt="">
+                        </div>
+                        <div class="info-block__text">
+                            <p class="_gray-text _small-text">
+                                При заказе весом более 5 кг, доплата
+                                15 грн за каждый следующий кг
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="checkout__confirm-item checkout__confirm-item--border-top">
+                    <div class="checkout__confirm-total">
+                        <span>К оплате: </span>
+                        <span>4632 грн</span>
+                    </div>
+                    <div class="info-block info-block--padding">
+                        <div class="info-block__img-wrap">
+                            <img class="info-block__img" src="/images/credit-icon.svg" alt="">
+                        </div>
+                        <div class="info-block__text">
+                            <p class="_gray-text _small-text">
+                                Оплатите картой сейчас и получите дополнительную скидку 5%
+                            </p>
+                        </div>
+                    </div>
+                    <button class="pink-button button">
+                        <span>Подтвердить заказ</span>
+                    </button>
+                    <div class="checkout__confirm-img-holder">
+                        <div class="checkout__confirm-img">
+                            <img class="" src="/images/visa-icon.svg" alt="">
+                        </div>
+                        <div class="checkout__confirm-img">
+                            <img class="" src="/images/master-icon.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="checkout__agree-text">
+                <a href="#" class="blue-text checkout__back-btn checkout__back-btn--mob">
+                    <span>
+                        <img class="checkout__back-btn-img" src="/images/arrow-left.svg" alt="">
+                    </span>
+                    <span>Вернуться в корзину</span>
+                </a>
+                <p class="_gray-text _small-text">
+                    Нажимая «Подтвердить заказ», вы соглашаетесь с
+                    <a href="#" class="blue-text">договором публичной оферты</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
